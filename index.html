@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MONEY MANAGEMENT</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+</head>
+
+<body>
+    <header class="header">
+        <h2 class="text-center py-md-5 py-3">MONEY MANAGEMENT</h2>
+    </header>
+    <section class="mainPart d-md-flex px-md-5 px-4">
+        <div class="mimg col col-md-6 m-auto px-md-4 p-4 ">
+            <img src="./coinPlant.webp" alt="">
+        </div>
+        <div class="col col-md-6 bg-secondary-subtle m-auto px-md-5 p-4">
+            <div class="text-center income py-3">
+                <h5 class="py-2">Income</h5>
+                <label for="" class="fw-bold py-2">Income :</label>
+                <input type="number" name="" id="income">
+            </div>
+
+            <div class="expenses text-center py-3 mTable">
+                <h5>Expenses</h5>
+                <label for="" class="fw-bold">Food :</label>
+                <input type="number" name="" id="food" class="my-3"> <br>
+                <label for="" class="fw-bold">Rent :</label>
+                <input type="number" name="" id="rent" class="my-3"> <br>
+                <label for="" class="fw-bold">Clothes :</label>
+                <input type="number" class="my-2" id="clothe"> <br>
+
+                <button class="fw-bold px-5 py-2 my-4" onclick="getData()" id="account">Calculate</button> <br>
+                <span class="fw-bold">Total Expenses :</span> &nbsp; <span id="expense" class="fw-bold">0</span><br>
+                <br>
+                <span class="fw-bold">Balance :</span>&nbsp; <span id="balance" class="fw-bold">0</span>
+            </div>
+            <div class="savings text-center">
+                <label for="" class="fw-bold">Save :</label>
+                <input type="number" id="save"> <span class="fw-bold">%</span>
+                <button class="fw-bold px-5 py-2 my-4" onclick="getSave()">Save</button><br>
+                <span class="fw-bold">Saving Amount: </span> <span id="amount" class="fw-bold">0</span><br> <br>
+                <span class="fw-bold">Remaining Balance :</span><span id="remain" class="fw-bold">0</span>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
